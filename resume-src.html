@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aziz Enam — Resume</title>
+    <style>
+      @page {
+        size: letter;
+        margin: 0.5in 0.65in;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #1a1a1a;
+        font-size: 12px;
+        line-height: 1.38;
+        margin: 0;
+      }
+
+      header {
+        margin-bottom: 9px;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        margin: 0 0 3px;
+      }
+
+      .contact {
+        font-size: 11px;
+        color: #555;
+      }
+
+      .contact a {
+        color: #555;
+        text-decoration: none;
+      }
+
+      h2 {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #000;
+        border-bottom: 1px solid #cfcfcf;
+        padding-bottom: 3px;
+        margin: 11px 0 6px;
+      }
+
+      .job {
+        margin-bottom: 8px;
+      }
+
+      .job-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .job-title {
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      .job-title .company {
+        font-weight: 700;
+      }
+
+      .job-meta {
+        color: #555;
+        font-size: 10px;
+        white-space: nowrap;
+        text-align: right;
+      }
+
+      .desc {
+        margin: 4px 0 0;
+      }
+
+      ul {
+        margin: 3px 0 0;
+        padding-left: 16px;
+      }
+
+      li {
+        margin-bottom: 2.5px;
+      }
+
+      a {
+        color: #1a1a1a;
+      }
+
+      .patent {
+        margin-bottom: 5px;
+      }
+
+      .patent .ptitle {
+        font-weight: 700;
+      }
+
+      .patent .pmeta {
+        color: #555;
+        font-size: 10px;
+      }
+
+      .patent .pdesc {
+        display: block;
+        margin-top: 1px;
+      }
+
+      .skills p {
+        margin: 0 0 3px;
+      }
+
+      .edu {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 3px;
+      }
+
+      .edu .deg {
+        font-style: italic;
+        color: #333;
+      }
+
+      .edu .school {
+        font-weight: 700;
+      }
+
+      .edu .year {
+        color: #555;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Aziz Enam</h1>
+      <div class="contact">
+        Robotics &amp; Machine Learning Engineer &nbsp;·&nbsp; New York, NY
+        &nbsp;·&nbsp;
+        <a href="mailto:azizenam@gmail.com">azizenam@gmail.com</a>
+        &nbsp;·&nbsp;
+        <a href="https://azizenam.github.io">azizenam.github.io</a>
+        &nbsp;·&nbsp;
+        <a href="https://twitter.com/sazizenam">@sazizenam</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">
+            Founding Member of Technical Staff,
+            <span class="company">Alquist</span>
+          </div>
+          <div class="job-meta">May 2025 – Present · New York, NY</div>
+        </div>
+        <p class="desc">
+          Architect, technical owner, and solo developer of an end-to-end
+          onboard autonomous navigation stack for next-generation robotic
+          platforms.
+        </p>
+        <ul>
+          <li>
+            Architected and deployed a vision-only autonomy pipeline spanning
+            perception, localization, planning, and control.
+          </li>
+          <li>
+            Deployed the onboard navigation stack on the NVIDIA Jetson Orin
+            embedded platform, achieving sub-100&nbsp;ms end-to-end latency from
+            camera exposure to commanded velocity. The real-time pipeline
+            integrated visual-inertial odometry (VIO), learned depth inference,
+            truncated and Euclidean signed-distance field (TSDF/ESDF) mapping,
+            wavefront cost maps, and a sampling-based model predictive control
+            (MPC) policy.
+          </li>
+          <li>
+            Developed a scalable automatic end-to-end metric 3D reconstruction
+            pipeline for sensor calibration and generation of onboard
+            localization maps. Engineered the system to operate robustly in
+            sparse-feature environments, including warehouses and retail stores,
+            enabling reconstruction of 50,000+ sq ft facilities and delivery of
+            localization-ready artifacts within hours.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">
+            Senior Applied Scientist — Localization, Calibration &amp; Mapping,
+            <span class="company">Cruise</span>
+          </div>
+          <div class="job-meta">Jan 2020 – Nov 2024 · San Francisco, CA</div>
+        </div>
+        <p class="desc">
+          Core engineer of the Localization, Calibration and Mapping team,
+          responsible for all things related to sensor intrinsic and extrinsic
+          calibrations. Promoted from ML/Robotics Software Engineer to Senior
+          Applied Scientist in July 2022.
+        </p>
+        <ul>
+          <li>
+            Solo and joint inventor on multiple patents related to sensor
+            calibration (see below).
+          </li>
+          <li>
+            Co-developed and researched a fully automated calibration system for
+            diverse sensors, including cameras, lidar, radar, and IMUs, in
+            unstructured environments. This system achieves complete calibration
+            of new vehicles within 1 mile of driving in parking lots or garages.
+          </li>
+          <li>
+            Authored and maintained online calibration monitors designed to
+            track the gradual drift of extrinsic calibrations in vehicles and
+            perform updates when deemed safe.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">
+            Software Engineer — Computer Vision,
+            <span class="company">Postmates X (Serve Robotics)</span>
+          </div>
+          <div class="job-meta">Jan 2018 – Dec 2020 · San Francisco, CA</div>
+        </div>
+        <p class="desc">
+          Core engineer of an early-stage team for Postmates' autonomous rover
+          project, Serve.
+        </p>
+        <ul>
+          <li>
+            Designed processes to calibrate cameras with lidar for sensor
+            fusion, along with visualization tools and quality metrics.
+          </li>
+          <li>
+            Developed and deployed deep learning systems for object detection
+            and scene segmentation.
+          </li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">
+            Software Engineer — Machine Learning,
+            <span class="company">FirstRain</span>
+          </div>
+          <div class="job-meta">Aug 2016 – Jul 2017 · San Mateo, CA</div>
+        </div>
+        <ul>
+          <li>
+            Worked on algorithms to remove and filter content from FirstRain's
+            corpus that was not considered business relevant.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Patents</h2>
+      <div class="patent">
+        <span class="ptitle"
+          >Map-assisted target detection for sensor calibration</span
+        >
+        <span class="pmeta">US 12,522,223 B2 (2026), GM Cruise Holdings</span>
+        <span class="pdesc"
+          >Extrinsically calibrates and checks autonomous-vehicle sensors
+          on-road by matching live sensor returns against static objects
+          identified from a semantic map layer.</span
+        >
+      </div>
+      <div class="patent">
+        <span class="ptitle">Continuous radar calibration check</span>
+        <span class="pmeta">US 12,386,057 B2 (2025), GM Cruise Holdings</span>
+        <span class="pdesc"
+          >Continuously monitors radar-to-lidar alignment by tracking relative
+          object positions over time, triggering corrective action when drift
+          exceeds a threshold.</span
+        >
+      </div>
+      <div class="patent">
+        <span class="ptitle">Drive-through calibration process</span>
+        <span class="pmeta">US 12,221,119 B2 (2025), GM Cruise Holdings</span>
+        <span class="pdesc"
+          >Validates a vehicle's sensor calibration by driving through an
+          environment mapped with known targets, confirming extrinsic parameters
+          stay within bounds before autonomous operation.</span
+        >
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <p>
+        <strong>Scientific Computing:</strong> C++17, Python, PyTorch /
+        TensorFlow / TensorRT, OpenCV, PCL, Eigen, Ceres, scikit-learn, NumPy /
+        SciPy, CUDA
+      </p>
+      <p>
+        <strong>Robotics:</strong> ROS, Linear Algebra, Convex Optimization,
+        State Estimation, Deep Learning, Optical Flow, Sensor Calibration, SLAM,
+        Kalman Filters, Model Predictive Control, 3DGS
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu">
+        <div>
+          <span class="school">University of California, Irvine</span> —
+          <span class="deg">M.S. in Applied Mathematics</span>
+        </div>
+        <div class="year">2014 – 2016</div>
+      </div>
+      <div class="edu">
+        <div>
+          <span class="school">University of California, San Diego</span> —
+          <span class="deg"
+            >B.S. in Electrical Engineering and Mathematics</span
+          >
+        </div>
+        <div class="year">2010 – 2014</div>
+      </div>
+    </section>
+  </body>
+</html>

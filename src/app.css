@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  @apply /* antialiased */ py-12 sm:py-24 md:py-32 text-neutral-700;
+  @apply /* antialiased */ py-12 sm:py-16 lg:py-20 text-neutral-700;
 }
 
 ::selection {

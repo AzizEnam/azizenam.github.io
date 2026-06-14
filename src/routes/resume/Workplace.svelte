@@ -3,7 +3,7 @@
 
   export let title: string;
   export let company: string;
-  export let url: string;
+  export let url: string | undefined = undefined;
   export let dates: string;
   export let location: string;
   export let hiddenMode: "click" | "always" | undefined = undefined;
@@ -19,7 +19,12 @@
     on:keypress={() => {}}
   >
     <h3 class="text-black text-lg leading-tight mb-1">
-      {title} at <a class="link" href={url}>{company}</a>
+      {title} at
+      {#if url}
+        <a class="link" href={url}>{company}</a>
+      {:else}
+        {company}
+      {/if}
     </h3>
     <p class="font-light mb-2">
       <span class="whitespace-nowrap">{dates}</span>
@@ -27,12 +32,14 @@
       <span class="whitespace-nowrap">{location}</span>
     </p>
     {#if !hidden}
-      <ul
-        class="list-disc pl-7 marker:text-neutral-400 space-y-1"
-        in:fade|local
-      >
-        <slot />
-      </ul>
+      <div in:fade|local>
+        {#if $$slots.description}
+          <p class="mb-2"><slot name="description" /></p>
+        {/if}
+        <ul class="list-disc pl-7 marker:text-neutral-400 space-y-1">
+          <slot />
+        </ul>
+      </div>
     {/if}
   </div>
 {/if}

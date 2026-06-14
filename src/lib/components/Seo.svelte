@@ -9,9 +9,10 @@
   <meta name="description" content={description} />
   <meta property="og:title" content={ogTitle ?? title} />
   <meta property="og:description" content={description} />
-  <meta
-    property="og:image"
-    content="https://www.ekzhang.com/assets/images/hudson-landscape.jpg"
-  />
+  <!--
+    Optional social-share preview image. Drop a file in static/assets/images/
+    and set its full URL here, then uncomment the two meta tags below.
+  <meta property="og:image" content="https://azizenam.github.io/assets/images/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  -->
 </svelte:head>

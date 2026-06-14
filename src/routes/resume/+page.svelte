@@ -4,238 +4,198 @@
 </script>
 
 <Seo
-  title="Eric Zhang – Resume"
-  description="Software engineer, researcher, and designer. Making meaningful systems and interfaces for people."
+  title="Aziz Enam – Resume"
+  description="Robotics and machine learning engineer. Autonomy, perception, localization, calibration, and mapping."
 />
 
+<section class="layout-md pt-12 pb-2">
+  <p>
+    <a class="link" rel="external" href="/assets/pdf/Aziz_Enam_Resume.pdf"
+      >Download a PDF version</a
+    >.
+  </p>
+</section>
+
 <section class="layout-md py-12">
-  <h2 class="heading2">Professional Work</h2>
+  <h2 class="heading2">Experience</h2>
 
   <Workplace
-    title="Member of Technical Staff"
-    company="Thinking Machines Lab"
-    url="https://thinkingmachines.ai/"
-    dates="October 2025 – Current"
+    title="Founding Member of Technical Staff"
+    company="Alquist"
+    url="https://www.alquistrobotics.com/"
+    dates="May 2025 – Current"
     location="New York, NY"
   >
+    <svelte:fragment slot="description">
+      Architect, technical owner, and solo developer of an end-to-end onboard
+      autonomous navigation stack for next-generation robotic platforms.
+    </svelte:fragment>
     <li>
-      Research infrastructure, training and inference systems, brief stint in
-      product.
+      Architected and deployed a vision-only autonomy pipeline spanning
+      perception, localization, planning, and control.
+    </li>
+    <li>
+      Deployed the onboard navigation stack on the NVIDIA Jetson Orin embedded
+      platform, achieving sub-100&nbsp;ms end-to-end latency from camera
+      exposure to commanded velocity. The real-time pipeline integrated
+      visual-inertial odometry (VIO), learned depth inference, truncated and
+      Euclidean signed-distance field (TSDF/ESDF) mapping, wavefront cost maps,
+      and a sampling-based model predictive control (MPC) policy.
+    </li>
+    <li>
+      Developed a scalable automatic end-to-end metric 3D reconstruction
+      pipeline for sensor calibration and generation of onboard localization
+      maps. Engineered the system to operate robustly in sparse-feature
+      environments, including warehouses and retail stores, enabling
+      reconstruction of 50,000+ sq ft facilities and delivery of
+      localization-ready artifacts within hours.
     </li>
   </Workplace>
 
   <Workplace
-    title="Principal Engineer"
-    company="Modal"
-    url="https://modal.com/"
-    dates="February 2022 – October 2025"
-    location="New York, NY"
+    title="Senior Applied Scientist — Localization, Calibration & Mapping"
+    company="Cruise"
+    url="https://www.getcruise.com/"
+    dates="January 2020 – November 2024"
+    location="San Francisco, CA"
   >
+    <svelte:fragment slot="description">
+      Core engineer of the Localization, Calibration and Mapping team,
+      responsible for all things related to sensor intrinsic and extrinsic
+      calibrations. Promoted from ML/Robotics Software Engineer to Senior
+      Applied Scientist in July 2022.
+    </svelte:fragment>
     <li>
-      Founding team member (#4), took Modal to 70+ people and $1B valuation.
-    </li>
-    <li>
-      I was the original author and architect for Modal's high-performance
-      container runtime in Rust. It runs on a cluster that spans across multiple
-      clouds (200,000 CPUs and 9,000 GPUs) and isolates many thousands of
-      customer workloads. This grew into a core system developed by a team of 16
-      people.
-    </li>
-    <li>
-      I developed Modal's content-addressed file system for container images,
-      tiered cache over petabytes of data, a novel <a
+      Solo and joint inventor on
+      <a
         class="link"
-        href="https://modal.com/blog/serverless-http">serverless HTTP stack</a
-      >, distributed
-      <a class="link" href="https://modal.com/docs/guide/tunnels">TLS relays</a
-      >, container sandboxing via
-      <a class="link" href="https://gvisor.dev/users/">gVisor</a>,
-      <a class="link" href="https://modal.com/docs/guide/private-networking"
-        >eBPF network infrastructure</a
-      >, and a
-      <a class="link" href="https://modal.com/blog/vprox">WireGuard-based VPN</a
+        href="https://patents.google.com/?inventor=Syed+Aziz+Enam&assignee=GM+Cruise+Holdings+LLC.&country=US&num=25"
+        >multiple patents</a
+      > related to sensor calibration.
+    </li>
+    <li>
+      Co-developed and researched a fully automated calibration system for
+      diverse sensors, including cameras, lidar, radar, and IMUs, in
+      unstructured environments. This system achieves complete calibration of
+      new vehicles within 1 mile of driving in parking lots or garages.
+    </li>
+    <li>
+      Authored and maintained online calibration monitors designed to track the
+      gradual drift of extrinsic calibrations in vehicles and perform updates
+      when deemed safe.
+    </li>
+  </Workplace>
+
+  <Workplace
+    title="Software Engineer — Computer Vision"
+    company="Postmates X (Serve Robotics)"
+    url="https://www.serverobotics.com/"
+    dates="January 2018 – December 2020"
+    location="San Francisco, CA"
+  >
+    <svelte:fragment slot="description">
+      Core engineer of an early-stage team for Postmates' autonomous rover
+      project,
+      <a
+        class="link"
+        href="https://www.forbes.com/sites/lanabandoim/2018/12/21/postmates-reveals-its-autonomous-delivery-rover-called-serve/"
+        >Serve</a
       >.
+    </svelte:fragment>
+    <li>
+      Designed processes to calibrate cameras with lidar for sensor fusion,
+      along with visualization tools and quality metrics.
     </li>
     <li>
-      I was also Modal's first product-focused engineer and designer. While
-      building
-      <a class="link" href="https://modal.com">modal.com</a>, I developed a
-      feeling for crafting interfaces to make complex systems legible. Mentored
-      and grew a world-class product engineering team.
-    </li>
-    <li>
-      Built
-      <a class="link" href="https://modal.com/blog/notebooks">Modal Notebooks</a
-      >, a modern cloud notebook with real-time collaboration and GPUs.
-    </li>
-    <li>
-      For 3.5+ years, was #1 committer, made decisions like adopting Rust and
-      Svelte despite early skepticism and shaped the long-term technical
-      direction.
+      Developed and deployed deep learning systems for object detection and
+      scene segmentation.
     </li>
   </Workplace>
 
   <Workplace
-    title="Contract Software Engineer"
-    company="Prosper Robotics"
-    url="https://prosper.org/"
-    dates="January 2022"
-    location="London, UK"
-    hiddenMode="always"
-  >
-    <li>
-      Early-stage startup developing VR-teleoperated household robots. Worked
-      with electrical and mechanical engineers.
-    </li>
-    <li>
-      I wrote real-time (&lt;10 μs) embedded microcontrollers in C++, developed
-      new network services and robot control systems in Go. Refactored a lot of
-      code, fixed many bugs, ported software to a new robot, introduced
-      continuous integration, tests, static type checking for Python.
-    </li>
-  </Workplace>
-
-  <Workplace
-    title="Software Engineer"
-    company="Convex"
-    url="https://convex.dev/"
-    dates="June 2021 – October 2021"
-    location="San Francisco, CA"
-  >
-    <li>
-      First hired engineer at a seed-stage startup. Worked with three
-      experienced technical cofounders (ex-principal engineers at Dropbox) to
-      build a reactive, serverless database platform using Rust, integrated with
-      the V8 JavaScript engine.
-    </li>
-    <li>
-      Wrote significant components of the MVP. As an early core team member,
-      this included rearchitecting the entire Convex client library, writing
-      several systems components in Rust, and advising on developer experience.
-    </li>
-  </Workplace>
-
-  <Workplace
-    title="Quantitative Research Intern"
-    company="Jump Trading"
-    url="https://jumptrading.com/"
-    dates="June 2021 – August 2021"
-    location="Chicago, IL"
+    title="Software Engineer — Machine Learning"
+    company="FirstRain"
+    dates="August 2016 – July 2017"
+    location="San Mateo, CA"
     hiddenMode="click"
   >
     <li>
-      Won the intern trading strategies competition and rotated on a trading
-      team to research algorithmic signals in US equities.
-    </li>
-    <li>
-      Developed decentralized apps on the Ethereum blockchain for the
-      cryptocurrency team, including new trading algorithms on DEXs. Contributed
-      to the open source Ethereum ecosystem in Rust, Go, and Python.
+      Worked on algorithms to remove and filter content from FirstRain's corpus
+      that was not considered business relevant.
     </li>
   </Workplace>
+</section>
 
-  <Workplace
-    title="Software Engineering Intern"
-    company="Scale AI"
-    url="https://scale.com/"
-    dates="December 2020 – January 2021"
-    location="San Francisco, CA"
-    hiddenMode="click"
-  >
-    <li>
-      Worked on machine learning infrastructure for a fast-growing startup using
-      Terraform, Kubernetes, and AWS.
-    </li>
-    <li>
-      Developed an in-house system to unify the ML training workflow, allowing
-      the team to quickly iterate on models, share results on a tracking server,
-      and launch Kubernetes distributed training jobs, saving “hours” of time on
-      each experiment.
-    </li>
-  </Workplace>
+<section class="layout-md py-12">
+  <h2 class="heading2">Patents</h2>
 
-  <Workplace
-    title="Architecture Intern"
-    company="Nvidia"
-    url="https://www.nvidia.com"
-    dates="June 2020 – August 2020"
-    location="Santa Clara, CA"
-    hiddenMode="click"
-  >
-    <li>
-      Worked with the Applied Deep Learning Research (ADLR) group on
-      <a class="link" href="https://arxiv.org/abs/2005.10821"
-        >deep learning models</a
-      > for street image segmentation.
-    </li>
-    <li>
-      Individually developed and released
-      <a class="link" href="https://github.com/ekzhang/fastseg">FastSeg</a>, an
-      open-source library containing state-of-the-art PyTorch implementations of
-      MobileNetV3 LR-ASPP for real-time semantic segmentation, significantly
-      more accurate than existing public implementations.
-    </li>
-  </Workplace>
+  <p class="mb-4">
+    Solo and joint inventor on patents related to autonomous-vehicle sensor
+    calibration, assigned to GM Cruise Holdings.
+    <a
+      class="link"
+      href="https://patents.google.com/?inventor=Syed+Aziz+Enam&assignee=GM+Cruise+Holdings+LLC.&country=US&num=25"
+      >View all on Google Patents.</a
+    >
+  </p>
 
-  <Workplace
-    title="Research Assistant"
-    company="Harvard Programming Languages Group"
-    url="https://pl.seas.harvard.edu/"
-    dates="June 2020 – August 2020"
-    location="Cambridge, MA"
-    hiddenMode="always"
-  >
+  <ul class="patents">
     <li>
-      Worked on a C++ compiler for
-      <a class="link" href="https://github.com/HarvardPL/formulog">Formulog</a>,
-      a variant of Datalog that supports ML-like syntax extension and SMT
-      queries.
+      <a class="link" href="https://patents.google.com/patent/US12522223B2"
+        >Map-assisted target detection for sensor calibration</a
+      >
+      <span class="meta">US 12,522,223 B2 · 2026</span>
+      <span class="pdesc"
+        >Extrinsically calibrates and checks autonomous-vehicle sensors on-road
+        by matching live sensor returns against static objects identified from a
+        semantic map layer.</span
+      >
     </li>
     <li>
-      Generated highly parallel templatized C++17 code, used caching in B-Tree
-      comparisons to speed up Datalog evaluation by 16x, and optimized existing
-      OpenMP code using lockless data structures for an additional 4x speedup.
+      <a class="link" href="https://patents.google.com/patent/US12386057B2"
+        >Continuous radar calibration check</a
+      >
+      <span class="meta">US 12,386,057 B2 · 2025</span>
+      <span class="pdesc"
+        >Continuously monitors radar-to-lidar alignment by tracking relative
+        object positions over time, flagging the system as out of calibration
+        and triggering corrective action when drift exceeds a threshold.</span
+      >
     </li>
     <li>
-      Wrote a handwritten parser that was 30x faster than the ANTLR-generated
-      LL(*) parser and used 20x less memory (80 GB to 4 GB).
+      <a class="link" href="https://patents.google.com/patent/US12221119B2"
+        >Drive-through calibration process</a
+      >
+      <span class="meta">US 12,221,119 B2 · 2025</span>
+      <span class="pdesc"
+        >Validates a vehicle's sensor calibration by driving through an
+        environment mapped with a series of known targets, confirming the
+        extrinsic parameters between sensors stay within bounds before
+        autonomous operation.</span
+      >
     </li>
-  </Workplace>
+  </ul>
+</section>
 
-  <Workplace
-    title="Undergraduate Researcher"
-    company="Predictive Medicine Group"
-    url="https://www.predmed.org/"
-    dates="December 2019 – June 2020"
-    location="Boston, MA"
-    hiddenMode="always"
-  >
-    <li>
-      Conducted research in statistics & medical informatics advised by Ben Reis
-      (Harvard Medical School), developing temporal models to identify patients
-      at high risk of suicide based on medical histories obtained from
-      Massachusetts General Hospital.
-    </li>
-  </Workplace>
+<section class="layout-md py-12">
+  <h2 class="heading2">Skills</h2>
 
-  <Workplace
-    title="Computer Science Instructor"
-    company="AlphaStar Academy"
-    url="https://alphastar.academy/"
-    dates="December 2017 – April 2020"
-    location="Santa Clara, CA"
-    hiddenMode="always"
-  >
-    <li>
-      Taught advanced algorithms and data structures (USACO Platinum) and
-      AIME-level (national math competition) mathematics to talented high school
-      students across the nation.
-    </li>
-    <li>
-      Developed detailed lesson plans and recorded lectures for future summer
-      programs and online courses.
-    </li>
-  </Workplace>
+  <div class="mb-4">
+    <h3 class="font-medium mb-1">Scientific Computing:</h3>
+    <p>
+      C++17, Python, PyTorch / TensorFlow / TensorRT, OpenCV, PCL, Eigen, Ceres,
+      scikit-learn, NumPy / SciPy, CUDA
+    </p>
+  </div>
+
+  <div class="mb-4">
+    <h3 class="font-medium mb-1">Robotics:</h3>
+    <p>
+      ROS, Linear Algebra, Convex Optimization, State Estimation, Deep Learning,
+      Optical Flow, Sensor Calibration, SLAM, Kalman Filters, Model Predictive
+      Control, 3DGS
+    </p>
+  </div>
 </section>
 
 <section class="layout-md py-12">
@@ -243,150 +203,35 @@
 
   <div class="mb-4">
     <div class="flex justify-between items-end">
-      <h3 class="text-black text-lg">Harvard University</h3>
-      <div class="text-neutral-500 mb-0.5">2022 — 2023</div>
+      <h3 class="text-black text-lg">University of California, Irvine</h3>
+      <div class="text-neutral-500 mb-0.5">2014 — 2016</div>
     </div>
-    <p class="byline">S.M. in Computer Science</p>
+    <p class="byline">M.S. in Applied Mathematics</p>
   </div>
 
   <div class="mb-4">
     <div class="flex justify-between items-end">
-      <h3 class="text-black text-lg">Harvard University</h3>
-      <div class="text-neutral-500 mb-0.5">2019 — 2023</div>
+      <h3 class="text-black text-lg">University of California, San Diego</h3>
+      <div class="text-neutral-500 mb-0.5">2010 — 2014</div>
     </div>
-    <p class="byline">A.B. in Computer Science and Mathematics</p>
-  </div>
-
-  <p>Graduated magna cum laude, with highest honors in field.</p>
-
-  <h4 class="font-medium mt-4 mb-1">Teaching:</h4>
-  <ul>
-    <li>
-      TF for CS 153 (Compilers), Fall 2021 —
-      <em>Certificate of Distinction in Teaching</em>
-    </li>
-    <li>
-      TA for
-      <a class="link" href="https://sgi.mit.edu/"
-        >Summer Geometry Institute (SGI)</a
-      >, Summer 2021
-    </li>
-    <li>
-      TF for CS 161 (Operating Systems), Spring 2021 —
-      <em>Certificate of Distinction in Teaching</em>
-    </li>
-    <li>TF for CS 182 (Artificial Intelligence), Fall 2020</li>
-    <li>
-      TF for CS 124 (Data Structures and Algorithms), Spring 2020 —
-      <em>Commendation for Extraordinary Teaching</em>
-    </li>
-  </ul>
-
-  <h4 class="font-medium mt-4 mb-1">Graduate-level technical coursework:</h4>
-  <ul>
-    <li>Advanced Computational Complexity (CS 221)</li>
-    <li>Random Processes and Algorithms (CS 223)</li>
-    <li>Computational Learning Theory (CS 228)</li>
-    <li>Advanced Computer Networks (CS 243)</li>
-    <li>Advanced Topics in PL/AI (CS 252r)</li>
-    <li>Advanced Topics in PL Design (CS 252r)</li>
-    <li>Systems Security (CS 263)</li>
-    <li>Distributed Systems Engineering (MIT 6.824)</li>
-    <li>Shape Analysis (MIT 6.838)</li>
-    <li>Robotic Manipulation (MIT 6.843)</li>
-    <li>Probability (Stat 210)</li>
-    <li>Statistical Inference (Stat 211)</li>
-  </ul>
-
-  <h4 class="font-medium mt-4 mb-1">Undergraduate technical coursework:</h4>
-  <ul>
-    <li>Compilers (CS 153)</li>
-    <li>Operating Systems (CS 161)</li>
-    <li>Computer Graphics (MIT 6.837)</li>
-    <li>Nanotechnology Fabrication (MIT 6.2540)</li>
-    <li>Chaotic Dynamical Systems (Math 118r)</li>
-    <li>Number Fields (Math 129)</li>
-    <li>Differential Topology (Math 132)</li>
-    <li>Honors Abstract Algebra (Math 55a)</li>
-    <li>Honors Real and Complex Analysis (Math 55b)</li>
-  </ul>
-</section>
-
-<section class="layout-md py-12">
-  <h2 class="heading2">Awards and Honors</h2>
-
-  <div class="mb-4">
-    <h3 class="font-medium mb-1">Computer Science:</h3>
-    <ul>
-      <li>
-        <b>International Olympiad in Informatics (IOI):</b> Gold Medalist (2018,
-        2019), 7<sup>th</sup> place globally
-      </li>
-      <li>
-        <b>Google Hash Code:</b> World Finalist (2020, 2021, 2022), 6<sup
-          >th</sup
-        > place team out of over 100,000 students and professionals
-      </li>
-      <li>
-        <b>Google Code Jam:</b> Round 3 Finalist (2020), placed 34<sup>th</sup>
-        globally
-      </li>
-      <li><b>Facebook Hacker Cup:</b> Round 3 Finalist (2020)</li>
-      <li><b>PicoCTF:</b> Winner (2018), ranked 6th</li>
-    </ul>
-  </div>
-
-  <div class="mb-4">
-    <h3 class="font-medium mb-1">Mathematics:</h3>
-    <ul>
-      <li>
-        <b>Mathematical Olympiad Program (MOP):</b> Participant (2017), IMO team
-        selection group (2017, 2018)
-      </li>
-      <li>
-        <b>USA Math Olympiad (USAMO):</b> Honorable Mention (2017), top 24 in nation
-      </li>
-    </ul>
-  </div>
-
-  <div class="mb-4">
-    <h3 class="font-medium mb-1">Physics:</h3>
-    <ul>
-      <li><b>U.S. Physics Team:</b> Invitee (2017, 2018, 2019)</li>
-      <li>
-        <b>USA Physics Olympiad (USAPhO):</b> Gold Medalist (2017, 2018, 2019)
-      </li>
-    </ul>
-  </div>
-
-  <div class="mb-4">
-    <h3 class="font-medium mb-1">Music Performance:</h3>
-    <ul>
-      <li>
-        <b>National YoungArts Foundation:</b> Winner in Classical Music (2018, 2019)
-      </li>
-      <li>
-        <b>JDR Viola Competition:</b> Grand prize winner, performed with a professional
-        orchestra (2019)
-      </li>
-      <li>
-        <b>Texas All-State Symphony Orchestra:</b> Principal Violist (2017), Co-Principal
-        (2016, 2018)
-      </li>
-    </ul>
+    <p class="byline">B.S. in Electrical Engineering and Mathematics</p>
   </div>
 </section>
 
 <style lang="postcss">
-  b {
-    @apply font-medium;
-  }
-
-  ul {
-    @apply list-disc pl-7 marker:text-neutral-400;
-  }
-
   .byline {
     @apply font-serif italic;
+  }
+
+  .patents {
+    @apply list-disc pl-7 marker:text-neutral-400 space-y-3;
+  }
+
+  .patents .meta {
+    @apply block text-neutral-500 text-base;
+  }
+
+  .patents .pdesc {
+    @apply block text-base mt-0.5;
   }
 </style>
