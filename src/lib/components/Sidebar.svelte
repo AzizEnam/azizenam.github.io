@@ -1,10 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  const links = [
-    { name: "projects", href: "/projects" },
-    { name: "resume", href: "/resume" },
-  ];
+  const links = [{ name: "resume", href: "/resume" }];
 </script>
 
 <aside class="sidebar" data-sveltekit-preload-code="eager">
