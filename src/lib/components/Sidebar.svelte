@@ -15,10 +15,9 @@
     />
   </a>
 
-  <h1 class="mt-5 leading-tight">
+  <h1 class="mt-5 mb-6 leading-tight">
     <a href="/" class="text-black font-bold text-2xl">Aziz Enam</a>
   </h1>
-  <p class="text-neutral-500 mb-6">Robotics &amp; ML Engineer</p>
 
   <nav>
     {#each links as link (link.href)}
